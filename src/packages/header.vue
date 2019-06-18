@@ -1,8 +1,8 @@
 <template>
   <div :class="Classes">
-    <div @click="back" class="h-header-left">
+    <div class="h-header-left">
       <slot name="left">
-        <i v-if="isBack" class="h-icon icon-arrow-left"></i>
+        <i v-if="isBack" @click="back" class="h-icon icon-arrow-left"></i>
       </slot>
     </div>
     <div class="h-header-center"><slot>{{title}}</slot></div>

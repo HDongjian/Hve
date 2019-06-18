@@ -1,29 +1,31 @@
-# hve
+# Hve
 
-## Project setup
-```
-npm install
-```
+基于Vue的移动端框架
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 框架简介
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- 编写框架基于vue-cli3.0
+- 编写CSS基于CSS预处理器Less
+- 支持主题设置，rem布局
 
-### Run your tests
-```
-npm run test
-```
+## 文档
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## 开发进程
+
+- 更早
+  - 生成项目
+  - 配置基本文件目录
+  - 配置`vue.config.js`文件
+
+- 2019-6-17
+  - 创建`style`文件夹，确定样式目录结构
+  - 实现`button`组件基本开发：不同状态按钮颜色，大小，点击事件等
+  - 实现`input`组件基本开发：双向数据绑定，大小，是否禁用
+  - 实现`icon`组件开发
+
+- 2019-6-18
+  - 优化`input`组件，实现清除图标功能以及展示
+  - 实现`header`组件基本开发：返回操作，更多操作，左中右插槽
+
