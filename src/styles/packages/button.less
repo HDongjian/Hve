@@ -1,0 +1,63 @@
+@btn-prefix-cls: ~"@{css-prefix}btn";
+
+.@{btn-prefix-cls} {
+  width:@btn-width-size;
+  font-weight: @btn-font-weight;
+  border:1px solid @btn-default-border;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: @btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: @line-height-base;
+  &-normal{
+    .size(@btn-padding-base,@btn-font-size,@base-border-radius);
+  }
+  &-small{
+    .size(@btn-padding-small,@font-size-small,@base-border-radius-small);
+  }
+  &-large{
+    .size(@btn-padding-large,@font-size-large,@base-border-radius-large);
+  }
+  &-default{
+    .color(@btn-default-color,@btn-default-bg,@btn-default-border);
+  }
+  &-primary{
+    .color(@btn-font-color,@primary-color ,@primary-color);
+  }
+  &-info{
+    .color(@btn-font-color,@info-color ,@info-color);
+  }
+  &-success{
+    .color(@btn-font-color,@success-color ,@success-color);
+  }
+  &-warning{
+    .color(@btn-font-color,@warning-color ,@warning-color);
+  }
+  &-error{
+    .color(@btn-font-color,@error-color ,@error-color);
+  }
+  &-plain-primary{
+    .color(@primary-color,@btn-default-bg,@primary-color);
+  }
+  &-plain-info{
+    .color(@info-color,@btn-default-bg,@info-color);
+  }
+  &-plain-success{
+    .color(@success-color,@btn-default-bg,@success-color);
+  }
+  &-plain-warning{
+    .color(@warning-color,@btn-default-bg,@warning-color);
+  }
+  &-plain-error{
+    .color(@error-color,@btn-default-bg,@error-color);
+  }
+  &-auto{
+    width: auto;
+  }
+}

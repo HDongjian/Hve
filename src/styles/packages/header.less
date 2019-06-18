@@ -1,0 +1,30 @@
+@header-prefix-cls: ~"@{css-prefix}header";
+
+.@{header-prefix-cls} {
+  height: @header-height;
+  line-height: @header-line-height;
+  background-color: @header-bg;
+  color:@header-text-color;
+  font-size: @header-text-size;
+  display: flex;
+  padding: @header-padding-base;
+  &-left{
+    flex: 1;
+    .h-icon{
+      color:@header-backicon-color;
+      font-size: @header-backicon-size;
+    }
+  }
+  &-center{
+    flex:2;
+    text-align: center;
+  }
+  &-right{
+    flex:1;
+    text-align: right;
+      .h-icon{
+      color:@header-backicon-color;
+      font-size: @header-backicon-size;
+    }
+  }
+}

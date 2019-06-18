@@ -1,0 +1,92 @@
+// Prefix
+@css-prefix             : h-;
+@css-prefix-iconfont    : ivu-icon;
+
+// Color
+@primary-color          : #2d8cf0;
+@info-color             : #2db7f5;
+@success-color          : #19be6b;
+@warning-color          : #ff9900;
+@error-color            : #ed4014;
+@normal-color           : #e6ebf1;
+@link-color             : #2D8cF0;
+@link-hover-color       : tint(@link-color, 20%);
+@link-active-color      : shade(@link-color, 5%);
+@selected-color         : fade(@primary-color, 90%);
+
+
+//Base
+// @unit-size              :2px;
+@unit-size              :50rem;
+@us                     :@unit-size;
+@body-background        : #fff;
+@component-background   : #fff;
+@background-color-base  : #f7f7f7;  // base
+@font-family            : "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+@code-family            : Consolas,Menlo,Courier,monospace;
+@title-color            : #17233d;
+@text-color             : #515a6e;
+@font-size-base         : 14*2/@us;
+@font-size-small        : 12*2/@us;
+@font-size-large        : 16*2/@us;
+@line-height-base       : 1.5;
+@cursor-disabled        : not-allowed;
+
+
+@base-border-radius      : 8/@us;
+@base-border-radius-small: 8/@us;
+@base-border-radius-large: 12/@us;
+
+// Animation
+@animation-time         : .3s;
+@transition-time        : .2s;
+@ease-in-out            : ease-in-out;
+
+
+// Border color
+@border-color-base      : #dcdee2;  // outside
+@border-color-split     : #e8eaec;  // inside
+@border-width-base      : 1px;            // width of the border for a component
+@border-style-base      : solid;          // style of a components border
+
+// Button
+@btn-font-weight        : normal;
+@btn-width-size         : 100%;
+@btn-padding-base       : 16/@us 40/@us;
+@btn-padding-large      : 16/@us 60/@us;
+@btn-padding-small      : 10/@us 30/@us;
+@btn-font-size          : @font-size-base;
+@btn-font-size-large    : @font-size-large;
+
+
+@btn-font-color         : #fff;
+
+
+@btn-disable-color      : #c5c8ce;
+@btn-disable-bg         : @background-color-base;
+@btn-disable-border     : @border-color-base;
+
+@btn-default-color      : @text-color;
+@btn-default-bg         : #fff;
+@btn-default-border     : @border-color-base;
+
+// Input
+@input-height-small     : 70/@us;
+@input-height-base      : 90/@us;
+@input-height-large     : 100/@us;
+
+@input-padding-base     : 8/@us 14/@us;
+@input-disabled-bg      : #f3f3f3;
+@input-placeholder-color:@btn-disable-color;
+
+
+//Header
+
+@header-height          : 90/@us;
+@header-line-height     : 90/@us;
+@header-bg              :@primary-color;
+@header-text-color      :#fff;
+@header-text-size       :36/@us;
+@header-padding-base    :0 20/@us;
+@header-backicon-color  :@header-text-color;
+@header-backicon-size   :50/@us;
