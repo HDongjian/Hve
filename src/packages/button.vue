@@ -10,7 +10,8 @@ export default {
     type: { type: String, default: 'default' },
     size: { type: String, default: 'normal' },
     plain: { type: Boolean, default: false },
-    auto: { type: Boolean, default: false }
+    auto: { type: Boolean, default: false },
+    circle: { type: Boolean, default: false }
   },
   computed: {
     classes () {
@@ -19,7 +20,8 @@ export default {
         `${prefixCls}-${this.size}`,
         this.plain ? `${prefixCls}-plain-${this.type}` : `${prefixCls}-${this.type}`,
         {
-          [`${prefixCls}-auto`]: this.auto
+          [`${prefixCls}-auto`]: this.auto,
+          [`${prefixCls}-circle`]: this.circle
         }
       ]
     }

@@ -1,0 +1,20 @@
+@group-prefix-cls: ~"@{css-prefix}group";
+
+.@{group-prefix-cls} {
+  &-title{
+    padding:@group-padding-base;
+    height: @group-title-height;
+    line-height: @group-title-l-height;
+    border-bottom:@group-border;
+    font-size: @group-title-size;
+  }
+  &-title-left{
+    text-align: left;
+  }
+  &-title-center{
+    text-align: center;
+  }
+  &-title-right{
+    text-align: right;
+  }
+}

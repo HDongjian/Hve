@@ -1,0 +1,12 @@
+@layout-prefix-cls: ~"@{css-prefix}layout";
+
+.@{layout-prefix-cls} {
+  &-content{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  &-header,&-content,&-bottom{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

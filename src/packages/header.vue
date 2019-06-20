@@ -1,5 +1,5 @@
 <template>
-  <div :class="Classes">
+  <div ref="header" :class="Classes">
     <div class="h-header-left">
       <slot name="left">
         <i v-if="isBack" @click="back" class="h-icon icon-arrow-left"></i>
@@ -36,8 +36,6 @@ export default {
       ]
     }
   },
-  created () {},
-  mounted () {},
   methods: {
     back () {
       if (this.$lib.isFunction(this.backfunction)) {

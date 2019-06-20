@@ -4,6 +4,11 @@ import Home from './views/Home.vue'
 import Button from './views/Button.vue'
 import Input from './views/Input.vue'
 import Header from './views/Header.vue'
+import Layout from './views/Layout.vue'
+import Uploader from './views/Uploader.vue'
+import Message from './views/Message.vue'
+import Cell from './views/Cell.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -11,6 +16,10 @@ export default new Router({
     { path: '/', name: 'home', component: Home },
     { path: '/button', name: 'button', component: Button },
     { path: '/input', name: 'input', component: Input },
-    { path: '/header', name: 'header', component: Header }
+    { path: '/header', name: 'header', component: Header },
+    { path: '/layout', name: 'layout', component: Layout },
+    { path: '/uploader', name: 'uploader', component: Uploader },
+    { path: '/message', name: 'message', component: Message },
+    { path: '/cell', name: 'cell', component: Cell }
   ]
 })

@@ -36,6 +36,9 @@
 @base-border-radius      : 8/@us;
 @base-border-radius-small: 8/@us;
 @base-border-radius-large: 12/@us;
+@base-padding            : 0 @base-padding-size;
+@base-padding-size       : 20/@us;
+@base-box-height         : 90/@us;
 
 // Animation
 @animation-time         : .3s;
@@ -82,11 +85,29 @@
 
 //Header
 
-@header-height          : 90/@us;
-@header-line-height     : 90/@us;
+@header-height          : @base-box-height;
+@header-line-height     : @base-box-height;
 @header-bg              :@primary-color;
 @header-text-color      :#fff;
 @header-text-size       :36/@us;
-@header-padding-base    :0 20/@us;
+@header-padding-base    :@base-padding;
 @header-backicon-color  :@header-text-color;
 @header-backicon-size   :50/@us;
+
+//Cell
+@cell-height          : 90/@us;
+@cell-line-height     : 90/@us;
+@cell-font-size       : @font-size-base;
+@cell-padding-base    : @base-padding;
+@cell-border          :1px solid @border-color-base;
+@cell-link-icon-size  : 34/@us;
+@cell-link-icon-width : 40/@us;
+@cell-title-max-width : 50%;
+
+//Group
+
+@group-title-height    :@base-box-height;
+@group-title-l-height  :@base-box-height;
+@group-padding-base    : @base-padding;
+@group-border          :1px solid @border-color-base;
+@group-title-size      :@font-size-large;

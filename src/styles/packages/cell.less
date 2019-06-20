@@ -1,0 +1,45 @@
+@cell-prefix-cls: ~"@{css-prefix}cell";
+
+.@{cell-prefix-cls} {
+  font-size: @cell-font-size;
+  padding:@cell-padding-base;
+  border-bottom: @cell-border;
+  min-height:  @cell-height;
+  display: flex;
+  &-link{
+    position: relative;
+    padding-right: @base-padding-size+@cell-link-icon-width; 
+  }
+  &-title{
+    padding-right:@base-padding-size; 
+    align-self:center;
+    max-width: @cell-title-max-width;
+  }
+  &-content{
+    flex: 1;
+    align-self:center;
+  }
+  &-title-tooltip{
+    .text-tooltip;
+    height: @cell-height;
+    line-height: @cell-line-height;
+  }
+  &-content-tooltip{
+    .text-tooltip;
+    height: @cell-height;
+    line-height: @cell-line-height;
+  }
+  &-content-tx-right{
+    text-align: right;
+  }
+  &-content-tx-left{
+    text-align: left;
+  }
+  &-link-icon{
+    .po-ctr-y;
+    width: @cell-link-icon-width;
+    font-size: @cell-link-icon-size;
+    position: absolute;
+    right: @base-padding-size;
+  }
+}

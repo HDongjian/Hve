@@ -8,7 +8,7 @@
       <h-button type="primary">按钮</h-button>
       <h-button type="info">按钮</h-button>
       <h-button type="success">按钮</h-button>
-      <h-button type="warning">按钮</h-button>
+      <h-button circle type="warning">按钮</h-button>
       <h-button @click="clickButton" plain auto type="error">按钮</h-button>
     </div>
   </div>
