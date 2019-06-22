@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import { getClient } from '../utils/lib'
 const prefixCls = 'h-layout'
 export default {
   name: 'h-layout',
@@ -35,7 +36,7 @@ export default {
     }
   },
   created () {
-    this.device = this.$lib.getClient()
+    this.device = getClient()
   },
   mounted () {
     this.$nextTick(this.resizeContent)

@@ -1,4 +1,5 @@
 <template>
+<div>
   <h-layout>
     <h-header slot="header" :isBack="false">组件</h-header>
     <div slot="content">
@@ -19,6 +20,8 @@
       </h-group>
     </div>
   </h-layout>
+</div>
+
 </template>
 
 <script>

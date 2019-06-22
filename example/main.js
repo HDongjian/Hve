@@ -3,9 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import Hue from '../src/index'
+import Hve from '../src/index'
 
-Vue.use(Hue)
+Vue.use(Hve)
 Vue.config.productionTip = false
 new Vue({
   router,

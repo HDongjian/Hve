@@ -1,0 +1,29 @@
+.move-transition(@className, @leave,@enter) {
+  .move-@{className}-leave-active {
+    will-change: transform;
+    transition: transform 500ms;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: @leave;
+  }
+  
+  .move-@{className}-enter {
+    transform: @enter;
+  }
+  
+  .move-@{className}-enter-active {
+    will-change: transform;
+    transition: transform 500ms;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+
+.move-transition(left,translate(-100%, 0),translate(100%, 0));
+.move-transition(right,translate(100%, 0),translate(-100%, 0));

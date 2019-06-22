@@ -1,0 +1,42 @@
+@message-prefix-cls: ~"@{css-prefix}message";
+@message-box-prefix-cls: ~"@{css-prefix}message-box";
+@icon-prefix-cls: ~"@{css-prefix}message-icon";
+
+
+.@{message-box-prefix-cls} {
+  position: fixed;
+  top:180/@us;
+  text-align: center;
+  width: 100%;
+}
+.@{message-prefix-cls} {
+  padding:@message-btw-padding;
+  &-cnt{
+    background-color: @message-base-bg;
+    display: inline-block;
+    padding:@message-cnt-padding;
+    max-width: @message-base-width;
+    box-shadow: @message-base-shadow;
+    border-radius: @message-base-radius;
+    font-size: @message-cnt-fontsize;
+    text-align: left;
+  }
+  &-des{
+    margin-left: 10/@us;
+  }
+  &-icon-info{
+    color:@primary-color;
+  }
+  &-icon-success{
+    color:@success-color;
+  }
+  &-icon-warning{
+    color:@warning-color;
+  }
+  &-icon-error{
+    color:@error-color;
+  }
+}
+.@{icon-prefix-cls}{
+  font-size: 30/@us;
+}

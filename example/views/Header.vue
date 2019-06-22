@@ -33,6 +33,8 @@ export default {
 
 <style lang='less'>
 .demo-header{
+  height: 100%;
+  width: 100%;
   >div{
     margin-bottom: 10px;
   }

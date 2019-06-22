@@ -16,8 +16,7 @@ module.exports = {
     externals: isProd ? [{
       'es6-promise': 'es6-promise',
       'vue-router': 'vue-router',
-      'vuex': 'vuex',
-      'element-ui': 'element-ui'
+      'vuex': 'vuex'
     }, nodeExternals()] : undefined
   }
 }

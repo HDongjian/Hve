@@ -1,5 +1,8 @@
 <template>
-  <button :class="classes"  @click="handleClickLink" ><slot></slot></button>
+  <button :class="classes" @click="handleClickLink" >
+    <i v-if="icon" :class="iconClass"></i>
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -11,7 +14,8 @@ export default {
     size: { type: String, default: 'normal' },
     plain: { type: Boolean, default: false },
     auto: { type: Boolean, default: false },
-    circle: { type: Boolean, default: false }
+    circle: { type: Boolean, default: false },
+    icon: { type: String }
   },
   computed: {
     classes () {
@@ -24,6 +28,11 @@ export default {
           [`${prefixCls}-circle`]: this.circle
         }
       ]
+    },
+    iconClass () {
+      return ['h-icon', 'h-btn-icon', {
+        [`icon-${this.icon}`]: this.icon
+      }]
     }
   },
   methods: {
