@@ -1,13 +1,23 @@
-(function (w, d) {
-  var documentElement = document.documentElement
 
-  function callback () {
-    var clientWidth = documentElement.clientWidth
-    // 屏幕宽度大于780，不在放大
-    clientWidth = clientWidth < 780 ? clientWidth : 780
-    documentElement.style.fontSize = clientWidth / 15 + 'px'
-  }
+import { getClient, on } from './lib'
+import Dep from './dep'
 
-  document.addEventListener('DOMContentLoaded', callback)
-  window.addEventListener('orientationchange' in window ? 'orientationchange' : 'resize', callback)
-})(window, document)
+let documentElement = document.documentElement
+let sizeAuto = () => {
+  let { width } = getClient()
+  let clientWidth = width < 780 ? width : 780
+  documentElement.style.fontSize = clientWidth / 15 + 'px'
+}
+let rpSize = () => {
+  let { width, height } = getClient()
+  rp.notify({ width: width, height: height })
+}
+
+sizeAuto()
+on(document, 'DOMContentLoaded', rpSize)
+on(window, 'orientationchange' in window ? 'orientationchange' : 'resize', function () {
+  sizeAuto()
+  rpSize()
+})
+
+export const rp = new Dep()

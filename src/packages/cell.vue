@@ -19,7 +19,7 @@ export default {
     }
   },
   props: {
-    title: { type: String, default: '标题' },
+    title: { type: String },
     content: { type: String },
     islink: { type: Boolean, default: true },
     align: { type: String, default: 'right' },

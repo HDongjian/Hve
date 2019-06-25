@@ -1,5 +1,5 @@
 <template>
-  <div class="demo-button">
+  <div class="demo-message">
     <h-header>全局消息</h-header>
     <div class="list">
       <h-button @click="message('info')" type="primary">默认</h-button>
@@ -33,6 +33,15 @@ export default {
 }
 </script>
 
-<style lang='less' scoped>
-
+<style lang='less'>
+.demo-message{
+  height: 100%;
+  width: 100%;
+  .list{
+    padding:10px;
+  }
+  button{
+    margin-bottom: 10px;
+  }
+}
 </style>

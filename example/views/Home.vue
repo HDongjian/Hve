@@ -1,10 +1,10 @@
 <template>
-<div>
+<div class="hw home">
   <h-layout>
     <h-header slot="header" :isBack="false">组件</h-header>
     <div slot="content">
       <h-group title="Base" align='center'>
-        <h-cell title="Button 按钮 " @click="$router.push('button')"></h-cell>
+        <h-cell title="Button 按钮" @click="$router.push('button')"></h-cell>
       </h-group>
       <h-group title="Layout" align='center'>
         <h-cell title="Header 头部" @click="$router.push('header')"></h-cell>
@@ -13,6 +13,7 @@
       </h-group>
       <h-group title="Form" align='center'>
         <h-cell title="Input 输入框" @click="$router.push('input')"></h-cell>
+        <h-cell title="Checkbox 复选框" @click="$router.push('checkbox')"></h-cell>
         <h-cell title="Uploader 上传" @click="$router.push('uploader')"></h-cell>
       </h-group>
       <h-group title="View" align='center'>
@@ -37,7 +38,3 @@ export default {
   methods: {}
 }
 </script>
-
-<style lang='less'>
-
-</style>

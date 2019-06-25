@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hw">
     <h-header>上传</h-header>
     <h-uploader></h-uploader>
   </div>

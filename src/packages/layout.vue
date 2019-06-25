@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import { rp } from '../utils/rem'
 import { getClient } from '../utils/lib'
 const prefixCls = 'h-layout'
 export default {
@@ -37,23 +38,20 @@ export default {
   },
   created () {
     this.device = getClient()
+    rp.addSub((device) => {
+      this.device = device
+    })
   },
   mounted () {
-    this.$nextTick(this.resizeContent)
+    this.resizeContent()
   },
   methods: {
     resizeContent () {
-      setTimeout(() => {
-        const { top, content, bottom } = this.$refs
-        const topH = top.clientHeight
-        const bottomH = bottom.clientHeight
-        content.style.height = `calc(100% - ${topH + bottomH}px)`
-      }, 1)
+      const { top, content, bottom } = this.$refs
+      const topH = top.clientHeight
+      const bottomH = bottom.clientHeight
+      content.style.height = `calc(100% - ${topH + bottomH}px)`
     }
   }
 }
 </script>
-
-<style lang='less'>
-
-</style>

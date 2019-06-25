@@ -7,5 +7,12 @@
 </template>
 
 <style>
-
+#app{
+  height: 100%;
+  width: 100%;
+}
+.hw{
+  height: 100%;
+  width: 100%;
+}
 </style>

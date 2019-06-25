@@ -37,6 +37,8 @@ export default {
 
 <style lang='less'>
 .demo-button{
+  height: 100%;
+  width: 100%;
   .list{
     padding:10px;
   }

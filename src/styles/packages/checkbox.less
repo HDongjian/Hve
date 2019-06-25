@@ -1,0 +1,50 @@
+@checkbox-prefix-cls: ~"@{css-prefix}checkbox";
+@checkbox-disabled-prefix-cls: ~"@{css-prefix}checkbox-disabled";
+
+
+.@{checkbox-prefix-cls} {
+  height: @cell-height;
+  line-height: @cell-height;
+  padding:@cell-padding-base;
+  border-bottom: @cell-border;
+  position: relative;
+  &-inner{
+    display: inline-block;
+    height: 30/@us;
+    width: 30/@us;
+    border:@cell-border;
+    border-radius: @base-border-radius;
+    position: absolute;
+    .po-ctr-y;
+  }
+  &-checked{
+    border-color:@primary-color;
+    color:@normal-color;
+    background-color: @primary-color;
+    font-size: 32/@us;
+  }
+  &-input{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+  &-content{
+    margin-left: 46/@us;
+    font-size: @font-size-base;
+  }
+}
+.@{checkbox-disabled-prefix-cls}{
+  .@{checkbox-prefix-cls}-inner{
+    background-color: @base-disabled-color;
+    border-color: @base-disabled-size;
+  }
+  .@{checkbox-prefix-cls}-content{
+    color: @base-disabled-size;
+  }
+  .@{checkbox-prefix-cls}-checked{
+    color: @base-disabled-size;
+  }
+}

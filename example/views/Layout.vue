@@ -1,5 +1,5 @@
 <template>
-  <div class="demo-layout">
+  <div class="hw demo-layout">
     <h-layout>
       <h-header slot="header">布局</h-header>
       <div slot="content" class="content">内容</div>

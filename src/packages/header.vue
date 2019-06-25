@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import { isFunction } from '../utils/lib'
 const prefixCls = 'h-header'
 export default {
   name: 'h-header',
@@ -38,7 +39,7 @@ export default {
   },
   methods: {
     back () {
-      if (this.$lib.isFunction(this.backfunction)) {
+      if (isFunction(this.backfunction)) {
         this.backfunction()
       } else {
         this.$router.go(-1)

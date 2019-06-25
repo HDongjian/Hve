@@ -8,6 +8,7 @@ import HCell from './cell.vue'
 import HGroup from './group.vue'
 // Form
 import HInput from './input.vue'
+import HCheckbox from './checkbox/checkbox.vue'
 import HUploader from './uploader.vue'
 
 // View
@@ -21,7 +22,8 @@ const views = {
   HLayout,
   HUploader,
   HCell,
-  HGroup
+  HGroup,
+  HCheckbox
 }
 export default {
   install (Vue) {

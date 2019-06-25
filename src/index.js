@@ -1,4 +1,4 @@
-
+import './utils/rem'
 import './styles/index.less'
 import Packages from './packages'
 

@@ -8,6 +8,7 @@ import Layout from './views/Layout.vue'
 import Uploader from './views/Uploader.vue'
 import Message from './views/Message.vue'
 import Cell from './views/Cell.vue'
+import Checkbox from './views/Checkbox.vue'
 
 Vue.use(Router)
 
@@ -20,6 +21,7 @@ export default new Router({
     { path: '/layout', name: 'layout', component: Layout },
     { path: '/uploader', name: 'uploader', component: Uploader },
     { path: '/message', name: 'message', component: Message },
-    { path: '/cell', name: 'cell', component: Cell }
+    { path: '/cell', name: 'cell', component: Cell },
+    { path: '/checkbox', name: 'checkbox', component: Checkbox }
   ]
 })

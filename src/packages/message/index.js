@@ -1,6 +1,6 @@
 import MessageBox from './messageBox.vue'
 import Vue from 'vue'
-import lib from '../../utils/lib'
+import { isString, isObject } from '../../utils/lib'
 const newInstance = () => {
   const _props = {}
   const d = {
@@ -26,12 +26,12 @@ const newInstance = () => {
     message (props, type) {
       let nd = { ...d }
       nd.type = type
-      if (lib.isString(props)) {
+      if (isString(props)) {
         nd.content = props
         this.messages.push(nd)
         return
       }
-      if (lib.isObject(props)) {
+      if (isObject(props)) {
         let p = Object.assign(nd, props)
         messageBox.add(p)
         return
