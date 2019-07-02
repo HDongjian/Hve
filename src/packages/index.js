@@ -1,6 +1,6 @@
 // Base
 import HButton from './button.vue'
-import Icon from './icon.vue'
+import HIcon from './icon.vue'
 // Layout
 import HHeader from './header.vue'
 import HLayout from './layout.vue'
@@ -18,7 +18,7 @@ import Message from './message/index'
 const views = {
   HInput,
   HButton,
-  Icon,
+  HIcon,
   HHeader,
   HLayout,
   HUploader,

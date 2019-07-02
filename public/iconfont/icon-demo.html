@@ -1892,5 +1892,16 @@
     </div>
   </div>
 </body>
+<script>
+let names = document.getElementsByClassName('name')
+console.dir(names)
 
+let a = []
+for(var i=0;i<names.length;i++){
+  a.push(names[i].innerText)
+}
+
+console.log(JSON.stringify(a))
+
+</script>
 </html>

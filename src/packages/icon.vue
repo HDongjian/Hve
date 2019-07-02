@@ -4,14 +4,14 @@
 
 <script>
 export default {
-  name: 'icon',
+  name: 'h-icon',
   data () {
     return {
     }
   },
   props: {
     type: { type: String, required: true },
-    color: { type: String, default: '#333' },
+    color: { type: String, default: '#80848f' },
     size: { type: String, default: '16px' }
   },
   computed: {
