@@ -9,6 +9,8 @@ import Uploader from './views/Uploader.vue'
 import Message from './views/Message.vue'
 import Cell from './views/Cell.vue'
 import Checkbox from './views/Checkbox.vue'
+import Grid from './views/Grid.vue'
+import Icon from './views/Icon.vue'
 
 Vue.use(Router)
 
@@ -22,6 +24,8 @@ export default new Router({
     { path: '/uploader', name: 'uploader', component: Uploader },
     { path: '/message', name: 'message', component: Message },
     { path: '/cell', name: 'cell', component: Cell },
-    { path: '/checkbox', name: 'checkbox', component: Checkbox }
+    { path: '/checkbox', name: 'checkbox', component: Checkbox },
+    { path: '/grid', name: 'grid', component: Grid },
+    { path: '/icon', name: 'icon', component: Icon }
   ]
 })

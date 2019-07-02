@@ -1,0 +1,31 @@
+.h-row{
+  display: block;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  height: auto;
+  zoom: 1;
+  box-sizing: border-box;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+  }
+}
+.h-col{
+  display: block;
+  float: left;
+  box-sizing: border-box;
+}
+.loop-grid-columns(24);
+
+.loop-grid-columns(@index) when (@index > 0) {
+  .loop-grid-columns((@index - 1));
+  .h-col-span-@{index} {
+      display: block;
+      width: percentage((@index / 24));
+  }
+}

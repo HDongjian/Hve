@@ -5,10 +5,12 @@
     <div slot="content">
       <h-group title="Base" align='center'>
         <h-cell title="Button 按钮" @click="$router.push('button')"></h-cell>
+        <h-cell title="Icon 图标" @click="$router.push('icon')"></h-cell>
       </h-group>
       <h-group title="Layout" align='center'>
         <h-cell title="Header 头部" @click="$router.push('header')"></h-cell>
         <h-cell title="Layout 布局" @click="$router.push('layout')"></h-cell>
+        <h-cell title="Grid 栅格" @click="$router.push('grid')"></h-cell>
         <h-cell title="Cell 行" @click="$router.push('cell')"></h-cell>
       </h-group>
       <h-group title="Form" align='center'>

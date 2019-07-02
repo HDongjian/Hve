@@ -11,16 +11,7 @@
 </template>
 
 <script>
-
-export default {
-
-  data () {
-    return {
-    }
-  },
-  mounted () {},
-  methods: {}
-}
+export default {}
 </script>
 
 <style lang='less'>

@@ -10,6 +10,7 @@ import HGroup from './group.vue'
 import HInput from './input.vue'
 import HCheckbox from './checkbox/checkbox.vue'
 import HUploader from './uploader.vue'
+import { HRow, HCol } from './grid/index'
 
 // View
 import Message from './message/index'
@@ -23,7 +24,9 @@ const views = {
   HUploader,
   HCell,
   HGroup,
-  HCheckbox
+  HCheckbox,
+  HRow,
+  HCol
 }
 export default {
   install (Vue) {
